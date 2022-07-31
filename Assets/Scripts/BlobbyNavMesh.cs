@@ -32,13 +32,13 @@ namespace BlobbyNav
             navMeshAgent.SetDestination(movePositionTransform.position);
         }
 
-        void RotateTowards(GameObject target)
-        {
-            var lookPos = target.transform.position - transform.position;
-            lookPos.y = 0;
-            var targetRotation = Quaternion.LookRotation(lookPos);
-            transform.rotation = targetRotation;
-        }
+        //void RotateTowards(GameObject target)
+        //{
+        //    var lookPos = target.transform.position - transform.position;
+        //    lookPos.y = 0;
+        //    var targetRotation = Quaternion.LookRotation(lookPos);
+        //    transform.rotation = targetRotation;
+        //}
 
     }
 }

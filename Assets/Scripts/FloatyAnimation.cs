@@ -212,7 +212,7 @@ namespace FloatyMovement
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime);
             } while (Quaternion.Angle(transform.rotation, targetRotation) > 0.1f && isRotating == true);
 
-            if (Vector3.Dot(transform.TransformDirection(Vector3.forward), targetDirection) > 0.8)
+            if (Vector3.Dot(transform.TransformDirection(Vector3.forward), targetDirection) > 0.8f)
             {
                 isRotating = false;
             }
