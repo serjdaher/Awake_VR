@@ -28,6 +28,7 @@ namespace BlobbyNav
         // Update is called once per frame
         void Update()
         {
+            //RotateTowards(floaty);
             transform.rotation = floaty.transform.rotation;
             navMeshAgent.SetDestination(movePositionTransform.position);
         }
